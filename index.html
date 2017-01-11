@@ -1,0 +1,218 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cyberia</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="loggo"><span class="cyberia">Cyberia</span></div>
+			<div class="below-hamburger">
+				<div class="navicon hamburger" id="navicon" onclick="navOpen()">
+					<img src="icons/hamburger.png" alt="Cyberia menu" width="38px" height="28px">
+				</div>
+				<!-- Gömd kryss-ikon -->
+				<div class="navicon closeIcon" id="closeicon" style="display: none;" onclick="navClose()"> 
+					<img src="icons/closeicon.svg" alt="Cyberia menu" width="38px" height="28px">
+				</div>	
+			</div>			
+		</nav>
+	</header>
+	<div class="sideNav" id="sideNav" style="display: none;">
+		<ul>
+		    <li><a href="#varatjanster" onclick="navClose()">VÅRATJÄNSTER</a></li>
+		    <li><a href="#portfolio" onclick="navClose()">PORTFOLIO</a></li>
+		    <li><a href="#omoss" onclick="navClose()">OM OSS</a></li>
+		    <li><a href="#kontakt" onclick="navClose()">KONTAKT</a></li>
+		</ul>
+	</div>
+	<main class="container">
+	<section class="hero mobile-centering">		
+		<img src="images/front320.jpg" alt="Cyberia">
+		<h1 class="largespace">Webbyrån som ger allt</h1>
+		<p class="mobile largespace">Vi vänder oss till företag som vill ha en webbplats som fungerar lika bra för alla användare i alla webbläsare och på alla enheter. Vi ger dig en modern webb med optimerad användarupplevelse.</p>
+		<div class="largespace">
+		<img src="icons/cyberialogo.png" alt="Cyberia loggo" width="64px" height="64px">
+		</div>
+		<hr class="blueline">
+	</section>	
+	
+	<section  id="varatjanster" class="vara-tjanster mobile-centering">
+		<h1 class="largespace">Våra tjänster</h1>
+		<img class="smallspace" src="images/tjanster/inhouse320.jpg" alt="Kontorbild">
+		<h2 class="smallspace">Inhouse</h2>
+		<p class="mobile largespace">Vi kan utföra webbutveckling inhouse på vårt kontor på Sveavägen i Stockholm. Där jobbar våra utvecklare enligt Scrum eller annan agil projektmodell som anser vara det mest effektiva för projektet.
+		</p>
+		<p class="mobile largespace">Vi samverkar genom interaktiva projektredskap såsom t.ex. Trello vilket gör att du som beställare alltid vet vart projektet befinner sig. </p>
+		<img class="smallspace" src="images/tjanster/code320.jpg" alt="Kodbild">
+		<h2 class="smallspace">Kodgranskning</h2>
+		<p class="mobile largespace">Cyberia utför kodgranskningar av all typ av mjukvara. Våra vanligaste uppdrag innefattar webbapplikationer och desktopapplikationer men vi analyserar allt ifrån kerneldrivrutiner och nätverksprotokoll till autentiseringsmekanismer i molnet.</p>
+		<p class="mobile largespace">Ni kan använda kodgranskningar vid ett enskilt tillfälle eller som ett komplement till Er befintliga utvecklingsprocess.</p>
+		<img class="smallspace" src="images/tjanster/underhall320.jpg" alt="Underhållbild">
+		<h2 class="smallspace">Underhåll</h2>
+		<p class="mobile largespace">Om du satt ihop din webbplats själv eller låtit någon annan bygga den bör du hålla dig à jour om de uppdateringar som finns för just din plattform. 
+		</p>
+		<p class="mobile largespace">Om du satt ihop din webbplats själv eller låtit någon annan bygga den bör du hålla dig à jour om de uppdateringar som finns för just din plattform. 
+		</p>
+		<p class="mobile largespace">Vi sätter upp en kopia av din sajt i vår skyddade utvecklingsmiljö och kan där i lugn och ro arbeta med den utan att driften av din publika webbplats påverkas.</p>
+		<img class="smallspace" src="images/tjanster/design320.jpg" alt="Grafiskdesignbild">
+		<h2 class="smallspace">Grafisk design</h2>
+		<p class="mobile largespace">Ett företags grafiska profil är dess visuella identitet – allt du kommunicerar måste hänga ihop för att människor ska känna igen ditt varumärke. </p>
+		<p class="mobile largespace">Låt oss på Cyberia ta fram en grafisk profil till ditt företag så får du den grund du behöver för att bygga ditt varumärke och bli ihågkommen. </p>
+		<p class="mobile largespace">Vi tar fram grafik som ska genomsyra all din kommunikation för att du ska ge ett professionellt intryck.</p>
+		<hr class="blueline">
+	</section>
+	
+	<section id="portfolio" class="portfolio mobile-centering">
+		<h1 class="smallspace">Portfolio</h1>
+		<p class="mobile largespace">Utvecklingsteamet på Cyberia har haft förmånen att arbeta med några av de största varumärkena och projekt i regionen och utomlands, däribland många startups ovilliga att göra några kompromisser i kvalitet. Kolla in portfölj Cyberia.</p>
+		<img src="images/portfolio/ealogo.png" alt="EaLogo">
+		<img class="largespace" src="images/portfolio/eagamesmobilipad.png" alt="EaPageImage">
+		<p class="mobile largespace">Cyberia designade och utvecklade en kraftfull och lyhörd webbplats för att göra det möjligt för EA Games att visa upp sina kända spel. tiderna.</p>
+		<div class="largespace">
+		<img class="" src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
+		</div>
+		<hr class="blueline">
+		<div class="largespace">
+		<img class="smallspace" src="images/portfolio/Tmobile.png" alt="Tmobilelogo" width="100" height="100">
+		</div>
+		<img class="smallspace" src="images/portfolio/tmobiledesktop.png" alt="Tmohbileimage">
+		<p class="mobile largespace">Cyberia designat och utvecklat T Mobile Social Enterprise hemsida. Sajten grundades på Expressible content platform som skapades och konstruerades i egen regi.</p>
+		<div class="largespace">
+		<img src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
+		</div>
+		
+		<div class="portfolio-container largespace">
+			<div class="dark-blue">
+				<img src="images/portfolio/ergologo.png" alt="ergologo">
+			</div>
+			
+			<div class="light-blue">
+				<img src="images/portfolio/HealthyBooster_logo.png" alt="healthyboosterlogo">
+			</div>
+			<div class="light-blue">
+				<img src="images/portfolio/DG-Purple-Residential-Furniture-Logo.png" alt="distinctionlogo">
+			</div>
+			<div class="dark-blue">
+				<img src="images/portfolio/LOGO_AXE_FRUIT2.png" alt="axefuritlogo">
+			</div>
+			<div class="dark-blue">
+				<img src="images/portfolio/esprite-logo.png" alt="espritlogo">
+			</div>
+			<div class="light-blue">
+				<img src="images/portfolio/lagunitas-logo.png" alt="lagunitaslogo">
+			</div>
+			<div class="light-blue">
+				<img src="images/portfolio/Riedel_Glas_logo.svg.png" alt="riedellogo">
+			</div>
+			<div class="dark-blue">
+				<img src="images/portfolio/zara-logo.png" alt="zaralogo">
+			</div>
+		</div>
+		<hr class="blueline">
+	</section>
+	<section id="omoss" class="om-oss mobile-centering">
+		<h1 class="largespace">Om Cyberia</h1>
+		<img class="smallspace" src="icons/multiple-users-silhouette.svg" alt="vilkaarviicon" width="100" height="100" >
+		<h2 class="smallspace">Vilka är vi?</h2>
+		<p class="mobile largespace">Cyberia är den absolut bästa webbyrån i Stockholm just nu och kommer alltid att vara. Sen vi bildades har vi tagit branchen med storm och konkurrensen är bortblåst sedan länge. I framtiden ser vi oss inte bara ta över Sverige utan hela världen, från öknen  Sahara till tundran i norra Ryssland. Det är vårt mål.</p>
+		
+		<img class="smallspace" src="icons/burn-button.svg" alt="brinnericon" width="100" height="100">
+		<h2 class="smallspace">Vad vi brinner för</h2>
+		<p class="mobile largespace">Det vi brinner för är en ren, enkel och fräsch webb. Vi vill att kundupplevelsen är så bra att det ska kännas som ett 5-stjärnigt hotell. Det ska vara kvalitativt men samtidigt kostnadseffektivt för att du som kund ska vara nöjd men även vi nöjda. </p>
+		<img class="smallspace" src="icons/buildings.svg" alt="kontoricon" width="100" height="100">
+		<h2 class="smallspace">Vårt kontor</h2>
+		<p class="mobile largespace">Kontoret där magin skapas ligger i hjärtat av Stockholm. Vi visar på vårt kontor en stor mångsidighet, fortsatt potential och nytänkande. Kom in till oss och känn dig som hemma! </p>
+		<hr class="blueline">
+	</section>
+	
+	<section id="kontakt" class="kontakt mobile-centering">
+		<h1 class="largespace">Kontakt</h1>
+		<div class="largespace">
+		<img src="icons/business-contact-256.png" alt="kontakticon" width="80" height="80">
+		</div>
+		
+		<form action="" class="contactForm largespace">
+			<div class="fieldset">
+				<input type="text" id="name" placeholder="Namn">
+				<input type="email" id="email" placeholder="Email">
+				<input type="telephone" id="telephone" placeholder="Telephone">
+				<textarea name="Message" id="pen" cols="10" rows="5"></textarea>
+				<button type="submit">
+					Skicka
+				</button>
+			</div>	
+		</form>
+		
+		<div class="largespace">
+		<img src="icons/map-marker-256.png" alt="mapicon" width="80" height="80">
+		</div>
+		<div class="largespace">
+		<img src="images/GoogleMap.png" alt="googlemap" width="200" height="200">
+		</div>
+		<h2 class="smallspace">AKUTSTÖD</h2>
+		<span></span>
+		
+		<h4>info@cyberia.se</h4>
+		<h4>08- 102 03 04</h4>
+		<h4>Mön - Fri (10:00 till 06:00)</h4>
+		<hr class="blueline">
+	</section>
+	</main>
+	<footer class="footer mobile-centering">
+	    <hr>
+		<h2 class="largespace">CYBERIA Webbyrå AB, Stockholm</h2>
+		<h3 class="mobile aligntextleft">Besöksadress: Karlapaln 5</h3>
+		<h3 class="mobile aligntextleft">Telepfon: 073- 960 35 02</h3>
+		<h3 class="mobile aligntextleft largespace">E.post: info@cyberia.se</h3>
+		<div class="footericonswraper mobile smallspace">
+			<div class="smallspaceright">
+				<img src="icons/linkedin-2-64.png" alt="LinkedinIcon" width="48" height="48">
+			</div>
+			<img src="icons/facebook-2-64.png" alt="facebookIcon" width="48" height="48">
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
