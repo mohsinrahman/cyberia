@@ -183,7 +183,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-right: 50%;
   list-style: none;
   background: #9ad3de; 
   padding-top: 50px;
@@ -192,8 +191,62 @@ button {
   display: block;
   margin-top: 1.5em;
   text-decoration: none;
-  color: white; }
-
+  color: white; 
+}
+/*------------IPAD & DESKTOP MENU ------------------------------*/
+@media screen and (min-width: 240px) and (max-width: 500px){
+  .desktopNav{
+    display: none;
+  }
+  .headerlogo{
+    display: none;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1023px){
+  .desktopNav{
+    display: none;
+  }  
+  .sideNav {
+    transform: translateX(50%); 
+  }
+  .sideNav ul {
+    margin-right: 50%;
+  }
+  .headerlogo{
+    display: block;
+    margin-right: 4px;
+    height: 36px;
+    width: 36px;
+  }
+}
+@media screen and (min-width: 1024px){
+ .navicon, .below-hamburger{
+    display: none;
+ }
+ .desktopNav{
+    display: flex;
+    font-size: 0.75em;
+ }
+ .desktopNav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-right: 15px;
+  }
+  .desktopNav a {
+    display: block;
+    margin-right: 3em;
+    text-decoration: none;
+    color: white; 
+  }
+  .headerlogo{
+    display: block;
+    margin-right: 4px;
+    height: 36px;
+    width: 36px;
+  }  
+}
 /*---------------------------------------------------------*/
 input#martin {
   background-image: url("/icons/name.png");

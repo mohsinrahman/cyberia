@@ -11,7 +11,12 @@
 <body>
 	<header>
 		<nav>
-			<div class="loggo"><span class="cyberia">Cyberia</span></div>
+			<div class="loggo">
+				<span class="cyberia">
+					<img src="icons/cyberialogo.png" class="headerlogo"></img>
+					Cyberia
+				</span>
+			</div>
 			<div class="below-hamburger">
 				<div class="navicon hamburger" id="navicon" onclick="navOpen()">
 					<img src="icons/hamburger.png" alt="Cyberia menu" width="38px" height="28px">
@@ -20,12 +25,20 @@
 				<div class="navicon closeIcon" id="closeicon" style="display: none;" onclick="navClose()"> 
 					<img src="icons/closeicon.svg" alt="Cyberia menu" width="38px" height="28px">
 				</div>	
+			</div>
+			<div class="desktopNav">
+				<ul>
+				    <li><a href="#varatjanster">VÅRA TJÄNSTER</a></li>
+				    <li><a href="#portfolio">PORTFOLIO</a></li>
+				    <li><a href="#omoss">OM OSS</a></li>
+				    <li><a href="#kontakt">KONTAKT</a></li>
+				</ul>		
 			</div>			
 		</nav>
 	</header>
 	<div class="sideNav" id="sideNav" style="display: none;">
 		<ul>
-		    <li><a href="#varatjanster" onclick="navClose()">VÅRATJÄNSTER</a></li>
+		    <li><a href="#varatjanster" onclick="navClose()">VÅRA TJÄNSTER</a></li>
 		    <li><a href="#portfolio" onclick="navClose()">PORTFOLIO</a></li>
 		    <li><a href="#omoss" onclick="navClose()">OM OSS</a></li>
 		    <li><a href="#kontakt" onclick="navClose()">KONTAKT</a></li>
