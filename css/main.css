@@ -73,7 +73,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1  0px; }
+  flex: 1 1 0px; }
+
+.tjanst > img {
+  display: flex;
+  margin: 0 auto; }
 
 .dark-blue {
   background-color: #9ad3de; }
@@ -104,7 +108,7 @@ h2 {
   width: 6em;
   background-color: #FF9000;
   border-radius: 0.7em;
-  margin: 1em 0; }
+  margin-top: 54px; }
 
 .aligntextleft {
   text-align: left; }
@@ -216,7 +220,18 @@ button {
     display: block;
     margin-right: 4px;
     height: 36px;
-    width: 36px; } }
+    width: 36px; }
+
+  .mobile-centering {
+    flex-direction: row; }
+
+  .vara-tjanster {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; }
+
+  .tjanst {
+    flex: 1 1 320px; } }
 @media screen and (min-width: 1024px) {
   .navicon, .below-hamburger {
     display: none; }
