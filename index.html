@@ -46,10 +46,10 @@
 	</div>
 	<main class="container">
 	<section class="hero mobile-centering">	
-		<picture class="smallspace">
+		<picture class="largespace">
     		<source srcset="images/front320.jpg" media="(max-width: 500px)">
-    		<source srcset="images/front768.jpg" media="(min-width: 504px) and (max-width: 1099px)">
-    		<source srcset="images/front1280.jpg" media="(min-width: 1100px)">
+    		<source srcset="images/front768.jpg" media="(min-width: 504px) and (max-width: 1079px)">
+    		<source srcset="images/front1280.jpg" media="(min-width: 1080px)">
     		<img srcset="images/front320.jpg" alt="My default image">
 		</picture>	
 		<h1 class="largespace">Webbyrån som ger allt</h1>
@@ -62,10 +62,10 @@
 	<h1 class="largespace anchor">Våra tjänster</h1>
 	<section  id="varatjanster" class="vara-tjanster mobile-centering">
 		<div class="tjanst">
-			<picture class="smallspace">
+			<picture class="largespace">
 	    		<source srcset="images/tjanster/inhouse320.jpg" media="(max-width: 500px)">
-	    		<source srcset="images/tjanster/inhouse768.jpg" media="(min-width: 501px) and (max-width: 1099px)">
-	    		<source srcset="images/tjanster/inhouse1280.jpg" media="(min-width: 1100px)">
+	    		<source srcset="images/tjanster/inhouse768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
+	    		<source srcset="images/tjanster/inhouse1280.jpg" media="(min-width: 1080px)">
 	    		<img srcset="images/tjanster/inhouse320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Inhouse</h2>
@@ -75,10 +75,10 @@
 		</div>
 
 		<div class="tjanst">
-			<picture class="smallspace">
+			<picture class="largespace">
 	    		<source srcset="images/tjanster/code320.jpg" media="(max-width: 500px)">
-	    		<source srcset="images/tjanster/code768.jpg" media="(min-width: 501px) and (max-width: 1099px)">
-	    		<source srcset="images/tjanster/code1280.jpg" media="(min-width: 1100px)">
+	    		<source srcset="images/tjanster/code768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
+	    		<source srcset="images/tjanster/code1280.jpg" media="(min-width: 1080px)">
 	    		<img srcset="images/tjanster/code320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Kodgranskning</h2>
@@ -87,10 +87,10 @@
 		</div>
 
 		<div class="tjanst">
-			<picture class="smallspace">
+			<picture class="largespace">
 	    		<source srcset="images/tjanster/underhall320.jpg" media="(max-width: 500px)">
-	    		<source srcset="images/tjanster/underhall768.jpg" media="(min-width: 501px) and (max-width: 1099px)">
-	    		<source srcset="images/tjanster/underhall1280.jpg" media="(min-width: 1100px)">
+	    		<source srcset="images/tjanster/underhall768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
+	    		<source srcset="images/tjanster/underhall1280.jpg" media="(min-width: 1080px)">
 	    		<img srcset="images/tjanster/underhall320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Underhåll</h2>
@@ -102,8 +102,8 @@
 		<div class="tjanst">
 			<picture class="smallspace">
 	    		<source srcset="images/tjanster/design320.jpg" media="(max-width: 500px)">
-	    		<source srcset="images/tjanster/design768.jpg" media="(min-width: 501px) and (max-width: 1099px)">
-	    		<source srcset="images/tjanster/design1280.jpg" media="(min-width: 1100px)">
+	    		<source srcset="images/tjanster/design768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
+	    		<source srcset="images/tjanster/design1280.jpg" media="(min-width: 1080px)">
 	    		<img srcset="images/tjanster/design320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Grafisk design</h2>
@@ -114,7 +114,7 @@
 		
 	</section>
 		<hr class="blueline">
-	<section id="portfolio" class="flexcol portfolio mobile-centering">
+	<section id="portfolio" class="flexrow portfolio mobile-centering">
 		<h1 class="smallspace anchor">Portfolio</h1>
 		<p class="mobile largespace">Utvecklingsteamet på Cyberia har haft förmånen att arbeta med några av de största varumärkena och projekt i regionen och utomlands, däribland många startups ovilliga att göra några kompromisser i kvalitet. Kolla in portfölj Cyberia.</p>
 		<img src="images/portfolio/ealogo.png" alt="EaLogo">
@@ -127,7 +127,7 @@
 		<div class="largespace">
 			<img class="" src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
 		</div>
-		<hr class="blueline">
+		<!-- <hr class="blueline"> -->
 		<div class="largespace">
 			<img class="smallspace" src="images/portfolio/Tmobile.png" alt="Tmobilelogo" width="100" height="100">
 		</div>
@@ -172,16 +172,21 @@
 	<hr class="blueline">
 	<section id="omoss" class="om-oss mobile-centering">
 		<h1 class="largespace anchor">Om Cyberia</h1>
+	<div class="om-oss-col">	
 		<img class="smallspace" src="icons/multiple-users-silhouette.svg" alt="vilkaarviicon" width="100" height="100" >
 		<h2 class="smallspace">Vilka är vi?</h2>
-		<p class="mobile largespace">Cyberia är den absolut bästa webbyrån i Stockholm just nu och kommer alltid att vara. Sen vi bildades har vi tagit branchen med storm och konkurrensen är bortblåst sedan länge. I framtiden ser vi oss inte bara ta över Sverige utan hela världen, från öknen  Sahara till tundran i norra Ryssland. Det är vårt mål.</p>
-		
-		<img class="smallspace" src="icons/burn-button.svg" alt="brinnericon" width="100" height="100">
-		<h2 class="smallspace">Vad vi brinner för</h2>
-		<p class="mobile largespace">Det vi brinner för är en ren, enkel och fräsch webb. Vi vill att kundupplevelsen är så bra att det ska kännas som ett 5-stjärnigt hotell. Det ska vara kvalitativt men samtidigt kostnadseffektivt för att du som kund ska vara nöjd men även vi nöjda. </p>
-		<img class="smallspace" src="icons/buildings.svg" alt="kontoricon" width="100" height="100">
-		<h2 class="smallspace">Vårt kontor</h2>
-		<p class="mobile largespace">Kontoret där magin skapas ligger i hjärtat av Stockholm. Vi visar på vårt kontor en stor mångsidighet, fortsatt potential och nytänkande. Kom in till oss och känn dig som hemma! </p>	
+		<p class="mobile largespace p1">Cyberia är den absolut bästa webbyrån i Stockholm just nu och kommer alltid att vara. Sen vi bildades har vi tagit branchen med storm och konkurrensen är bortblåst sedan länge. I framtiden ser vi oss inte bara ta över Sverige utan hela världen, från öknen  Sahara till tundran i norra Ryssland. Det är vårt mål.</p>
+	</div>
+	<div class="om-oss-col">	
+			<img class="smallspace" src="icons/burn-button.svg" alt="brinnericon" width="100" height="100">
+			<h2 class="smallspace">Vad vi brinner för</h2>
+			<p class="mobile largespace p2">Det vi brinner för är en ren, enkel och fräsch webb. Vi vill att kundupplevelsen är så bra att det ska kännas som ett 5-stjärnigt hotell. Det ska vara kvalitativt men samtidigt kostnadseffektivt för att du som kund ska vara nöjd men även vi nöjda. </p>
+	</div>		
+	<div class="om-oss-col">
+			<img class="smallspace" src="icons/buildings.svg" alt="kontoricon" width="100" height="100">
+			<h2 class="smallspace">Vårt kontor</h2>
+			<p class="mobile largespace p2">Kontoret där magin skapas ligger i hjärtat av Stockholm. Vi visar på vårt kontor en stor mångsidighet, fortsatt potential och nytänkande. Kom in till oss och känn dig som hemma! </p>
+	</div>
 	</section>
 	<hr class="blueline">
 	<section id="kontakt" class="kontakt mobile-centering">
@@ -213,7 +218,7 @@
 		
 		<h4>info@cyberia.se</h4>
 		<h4>08- 102 03 04</h4>
-		<h4>Mön - Fri (10:00 till 06:00)</h4>
+		<h4>Mån - Fri (10:00 till 06:00)</h4>
 	</section>
 	<hr class="blueline">
 	</main>
