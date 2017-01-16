@@ -6,7 +6,7 @@
 html {
   background-color: #fff;
   color: black;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
@@ -60,11 +60,13 @@ nav {
 /*------------- Headings----------------------------------*/
 h1 {
   margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   text-align: center; }
 
 h2 {
   margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   text-align: center; }
 
@@ -406,17 +408,9 @@ button {
 
   .p2 {
     width: 500px; } }
-/*---------------------------------------------------------*/
-input#martin {
-  background-image: url("/icons/name.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px; }
-
-input#emejl {
-  background-image: url("/icons/businessman-256.png");
-  background-size: 40px 40px;
-  background-repeat: no-repeat; }
+/*--------------------Styling------------------------*/
+.blueText {
+  color: #9ad3de; }
 
 /*# sourceMappingURL=main.css.map */
 

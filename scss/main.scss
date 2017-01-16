@@ -1,3 +1,4 @@
+@import "Partials/variables";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +7,7 @@
 html {
   background-color: #fff;
   color: black;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: $base-font;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
@@ -17,7 +18,7 @@ header {
   top: 0px; }
 
 nav {
-  background-color: #89bdd3;
+  background-color: $color-darkblue;
   height: 52px;
   display: flex;
   flex: 1 1 0px; }
@@ -33,7 +34,7 @@ nav {
   margin: auto; }
 
 .below-hamburger {
-  background-color: #9ad3de;
+  background-color: $color-lightblue;
   display: flex;
   flex: 0 0 80px; }
 
@@ -59,11 +60,13 @@ nav {
 /*------------- Headings----------------------------------*/
 h1 {
   margin: 0px;
+  font-family: $head-font;
   font-size: 30px;
   text-align: center; }
 
 h2 {
   margin: 0px;
+  font-family: $head-font;
   font-size: 24px;
   text-align: center; }
 p {
@@ -87,12 +90,12 @@ p {
 .dark-blue {
   width: 130px;
   height: 176px;		
-  background-color: #9ad3de; }
+  background-color: $color-lightblue; }
 
 .light-blue {
   width: 130px;
   height: 176px;		
-  background-color: #e3e3e3; }
+  background-color: $color-lightgrey; }
 
 .portfolio-container {
   display: flex;
@@ -116,7 +119,7 @@ p {
   margin-left: 25%;
   height: 0.1em;
   width: 6em;
-  background-color: #FF9000;
+  background-color: $color-orange;
   border-radius: 0.7em; 
   margin-top: 54px;}
 
@@ -143,7 +146,7 @@ p {
 button {
   display: block;
   width: 100%;
-  background-color: #89bdd3;
+  background-color: $color-darkblue;
   border: 0;
   height: 50px; }
 
@@ -170,7 +173,7 @@ button {
   display: flex;
   width: 100%;
   height: 100%;
-  background: #9ad3de;
+  background: $color-lightblue;
   float: right;
   justify-content: center;
   align-items: center;
@@ -184,7 +187,7 @@ button {
   top: 52;
   position: fixed;
   height: 100vh;
-  background: #9ad3de;
+  background: $color-lightblue;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-animation: slidein 0.5s forwards;
@@ -211,7 +214,7 @@ button {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  background: #9ad3de; 
+  background: $color-lightblue; 
   padding-top: 50px;
 }
 .sideNav a {
@@ -384,11 +387,11 @@ button {
   .dark-blue {
   	width: 269px;
   	height: 364px;		
-  	background-color: #9ad3de; }
+  	background-color: $color-lightblue; }
   .light-blue {
   	width: 269px;
   	height: 364px;		
-  	background-color: #e3e3e3; }
+  	background-color: $color-lightgrey; }
   .om-oss {
 	display: flex;
 	justify-content: center;
@@ -409,16 +412,9 @@ button {
     width: 500px;
   }  
 }
-/*---------------------------------------------------------*/
-input#martin {
-  background-image: url("/icons/name.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px; }
-
-input#emejl {
-  background-image: url("/icons/businessman-256.png");
-  background-size: 40px 40px;
-  background-repeat: no-repeat; }
+/*--------------------Styling------------------------*/
+.blueText {
+  color: $color-lightblue;
+}
 
 /*# sourceMappingURL=main.css.map */
