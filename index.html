@@ -11,11 +11,13 @@
 <body>
 	<header>
 		<nav>
-			<div class="loggo">
-				<span class="cyberia">
+			<div class="loggo frontpage">
+			<a href="#frontpage">
+				<span class="cyberia">	
 					<img src="icons/cyberialogo.png" class="headerlogo"></img>
 					Cyberia
 				</span>
+			</a>	
 			</div>
 			<div class="below-hamburger">
 				<div class="navicon hamburger" id="navicon" onclick="navOpen()">
@@ -44,6 +46,9 @@
 		    <li><a href="#kontakt" onclick="navClose()">KONTAKT</a></li>
 		</ul>
 	</div>
+	<div id="frontpage">
+		<h1 class="anchor"></h1>
+	</div>
 	<main class="container">
 	<section class="hero mobile-centering">	
 		<picture class="largespace">
@@ -59,14 +64,14 @@
 		</div>		
 	</section>
 	<hr class="blueline">
-	<h1 class="largespace anchor">Våra tjänster</h1>
 	<section  id="varatjanster" class="vara-tjanster mobile-centering">
+	<h1 class="largespace anchor">Våra tjänster</h1>
 		<div class="tjanst">
-			<picture class="largespace">
+			<picture>
 	    		<source srcset="images/tjanster/inhouse320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/inhouse768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/inhouse1280.jpg" media="(min-width: 1080px)">
-	    		<img srcset="images/tjanster/inhouse320.jpg" alt="My default image">
+	    		<img class="smallspaceright" srcset="images/tjanster/inhouse320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Inhouse</h2>
 			<p class="mobile largespace">Vi kan utföra webbutveckling inhouse på vårt kontor på Sveavägen i Stockholm. Där jobbar våra utvecklare enligt Scrum eller annan agil projektmodell som anser vara det mest effektiva för projektet.
@@ -75,7 +80,7 @@
 		</div>
 
 		<div class="tjanst">
-			<picture class="largespace">
+			<picture>
 	    		<source srcset="images/tjanster/code320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/code768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/code1280.jpg" media="(min-width: 1080px)">
@@ -87,7 +92,7 @@
 		</div>
 
 		<div class="tjanst">
-			<picture class="largespace">
+			<picture>
 	    		<source srcset="images/tjanster/underhall320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/underhall768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/underhall1280.jpg" media="(min-width: 1080px)">
@@ -100,7 +105,7 @@
 		</div>
 
 		<div class="tjanst">
-			<picture class="smallspace">
+			<picture>
 	    		<source srcset="images/tjanster/design320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/design768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/design1280.jpg" media="(min-width: 1080px)">
@@ -149,16 +154,16 @@
 			<div class="light-blue">
 				<img src="images/portfolio/HealthyBooster_logo.png" alt="healthyboosterlogo">
 			</div>
-			<div class="light-blue">
+			<div class="dark-blue">
 				<img src="images/portfolio/DG-Purple-Residential-Furniture-Logo.png" alt="distinctionlogo">
 			</div>
-			<div class="dark-blue">
+			<div class="light-blue">
 				<img src="images/portfolio/LOGO_AXE_FRUIT2.png" alt="axefuritlogo">
 			</div>
-			<div class="dark-blue">
+			<div class="light-blue">
 				<img src="images/portfolio/esprite-logo.png" alt="espritlogo">
 			</div>
-			<div class="light-blue">
+			<div class="dark-blue">
 				<img src="images/portfolio/lagunitas-logo.png" alt="lagunitaslogo">
 			</div>
 			<div class="light-blue">
