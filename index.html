@@ -51,19 +51,24 @@
 	</div>
 	<main class="container">
 	<section class="hero mobile-centering">	
-		<picture class="largespace">
-    		<source srcset="images/front320.jpg" media="(max-width: 500px)">
-    		<source srcset="images/front768.jpg" media="(min-width: 504px) and (max-width: 1079px)">
-    		<source srcset="images/front1280.jpg" media="(min-width: 1080px)">
-    		<img srcset="images/front320.jpg" alt="My default image">
-		</picture>	
-		<h1 class="largespace">Webbyrån som ger allt</h1>
-		<p class="mobile largespace">Vi vänder oss till företag som vill ha en webbplats som fungerar lika bra för alla användare i alla webbläsare och på alla enheter. Vi ger dig en modern webb med optimerad användarupplevelse.</p>
-		<div class="largespace">
-		<img src="icons/cyberialogo.png" alt="Cyberia loggo" width="64px" height="64px">
-		</div>		
+			<picture>
+	    		<source srcset="images/front320.jpg" media="(max-width: 500px)">
+	    		<source srcset="images/front768.jpg" media="(min-width: 504px) and (max-width: 1079px)">
+	    		<source srcset="images/front1280.jpg" media="(min-width: 1080px)">
+	    		<img srcset="images/front320.jpg" alt="My default image">
+			</picture>
+		<div class="herogradient">	
+		</div>
+		<div id="herotext" class="herotext">	
+			<h1 class="largespace">Webbyrån som ger allt</h1>
+			<p class="mobile largespace">Vi vänder oss till företag som vill ha en webbplats som fungerar lika bra för alla användare i alla webbläsare och på alla enheter. Vi ger dig en modern webb med optimerad användarupplevelse.</p>
+		</div>	
+			<div class="largespace">
+				<img class="herohr" src="icons/cyberialogo.png" alt="Cyberia loggo" width="64px" height="64px">
+			</div>
+				
 	</section>
-	<hr class="blueline">
+	<hr class="herohr blueline">
 	<section  id="varatjanster" class="vara-tjanster mobile-centering">
 	<h1 class="largespace anchor">Våra tjänster</h1>
 		<div class="tjanst">
@@ -71,7 +76,7 @@
 	    		<source srcset="images/tjanster/inhouse320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/inhouse768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/inhouse1280.jpg" media="(min-width: 1080px)">
-	    		<img class="smallspaceright" srcset="images/tjanster/inhouse320.jpg" alt="My default image">
+	    		<img class="smallspaceright largespace" srcset="images/tjanster/inhouse320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Inhouse</h2>
 			<p class="mobile largespace">Vi kan utföra webbutveckling inhouse på vårt kontor på Sveavägen i Stockholm. Där jobbar våra utvecklare enligt Scrum eller annan agil projektmodell som anser vara det mest effektiva för projektet.
@@ -84,7 +89,7 @@
 	    		<source srcset="images/tjanster/code320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/code768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/code1280.jpg" media="(min-width: 1080px)">
-	    		<img srcset="images/tjanster/code320.jpg" alt="My default image">
+	    		<img class="smallspaceright largespace" srcset="images/tjanster/code320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Kodgranskning</h2>
 			<p class="mobile largespace">Cyberia utför kodgranskningar av all typ av mjukvara. Våra vanligaste uppdrag innefattar webbapplikationer och desktopapplikationer men vi analyserar allt ifrån kerneldrivrutiner och nätverksprotokoll till autentiseringsmekanismer i molnet.</p>
@@ -96,7 +101,7 @@
 	    		<source srcset="images/tjanster/underhall320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/underhall768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/underhall1280.jpg" media="(min-width: 1080px)">
-	    		<img srcset="images/tjanster/underhall320.jpg" alt="My default image">
+	    		<img class="smallspaceright largespace" srcset="images/tjanster/underhall320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Underhåll</h2>
 			<p class="mobile largespace">Om du satt ihop din webbplats själv eller låtit någon annan bygga den bör du hålla dig à jour om de uppdateringar som finns för just din plattform. 
@@ -109,7 +114,7 @@
 	    		<source srcset="images/tjanster/design320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/design768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/design1280.jpg" media="(min-width: 1080px)">
-	    		<img srcset="images/tjanster/design320.jpg" alt="My default image">
+	    		<img class="smallspaceright largespace" srcset="images/tjanster/design320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Grafisk design</h2>
 			<p class="mobile largespace">Ett företags grafiska profil är dess visuella identitet – allt du kommunicerar måste hänga ihop för att människor ska känna igen ditt varumärke. </p>
@@ -119,60 +124,75 @@
 		
 	</section>
 		<hr class="blueline">
-	<section id="portfolio" class="flexrow portfolio mobile-centering">
+	<section id="portfolio" class="portfolio-container mobile-centering">
 		<h1 class="smallspace anchor">Portfolio</h1>
 		<p class="mobile largespace">Utvecklingsteamet på Cyberia har haft förmånen att arbeta med några av de största varumärkena och projekt i regionen och utomlands, däribland många startups ovilliga att göra några kompromisser i kvalitet. Kolla in portfölj Cyberia.</p>
-		<img src="images/portfolio/ealogo.png" alt="EaLogo">
-		<picture class="smallspace">
-    		<source srcset="images/portfolio/eagamesmobilipad.png" media="(max-width: 639px)">
-    		<source srcset="images/portfolio/eagamesdesktop.png" media="(min-width: 640px)">
-    		<img srcset="images/portfolio/eagamesmobilipad.png" alt="My default image">
-		</picture>	
-		<p class="mobile largespace">Cyberia designade och utvecklade en kraftfull och lyhörd webbplats för att göra det möjligt för EA Games att visa upp sina kända spel.</p>
-		<div class="largespace">
-			<img class="" src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
-		</div>
-		<!-- <hr class="blueline"> -->
-		<div class="largespace">
-			<img class="smallspace" src="images/portfolio/Tmobile.png" alt="Tmobilelogo" width="100" height="100">
-		</div>
-		<picture class="smallspace">
-    		<source srcset="images/portfolio/tmobilemobilipad.png" media="(max-width: 639px)">
-    		<source srcset="images/portfolio/tmobiledesktop.png" media="(min-width: 640px)">
-    		<img srcset="images/portfolio/tmobilemobilipad.png" alt="My default image">
-		</picture>	
-		<p class="mobile largespace">Cyberia har designat och utvecklat T Mobile Social Enterprise hemsida. Sajten grundades på Expressible content platform som skapades och konstruerades i egen regi.</p>
-		<div class="largespace">
-			<img src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
-		</div>
 		
-		<div class="portfolio-container largespace">
-			<div class="dark-blue">
-				<img src="images/portfolio/ergologo.png" alt="ergologo">
+		<div class="portfolio-col">
+			<div class="largespace">
+				<img class="smallspace" src="images/portfolio/ealogo.png" alt="EaLogo">
 			</div>
-			
-			<div class="light-blue">
-				<img src="images/portfolio/HealthyBooster_logo.png" alt="healthyboosterlogo">
-			</div>
-			<div class="dark-blue">
-				<img src="images/portfolio/DG-Purple-Residential-Furniture-Logo.png" alt="distinctionlogo">
-			</div>
-			<div class="light-blue">
-				<img src="images/portfolio/LOGO_AXE_FRUIT2.png" alt="axefuritlogo">
-			</div>
-			<div class="light-blue">
-				<img src="images/portfolio/esprite-logo.png" alt="espritlogo">
-			</div>
-			<div class="dark-blue">
-				<img src="images/portfolio/lagunitas-logo.png" alt="lagunitaslogo">
-			</div>
-			<div class="light-blue">
-				<img src="images/portfolio/Riedel_Glas_logo.svg.png" alt="riedellogo">
-			</div>
-			<div class="dark-blue">
-				<img src="images/portfolio/zara-logo.png" alt="zaralogo">
-			</div>
+			<picture class="smallspace portfoliodesktop">
+	    		<source srcset="images/portfolio/eaipad.png" media="(max-width: 500px)">
+	    		<source srcset="images/portfolio/eaipad.png" media="(min-width: 501px) and (max-width: 1079px)"">
+	    		<source srcset="images/portfolio/eadesktop.png" media="(min-width: 1080px)">
+	    		<img class="smallspaceright largespace" srcset="images/portfolio/eaipad.png" alt="My default image">
+			</picture>	
+				<p class="mobile largespace">Cyberia designade och utvecklade en kraftfull och lyhörd webbplats för att göra det möjligt för EA Games att visa upp sina kända spel.</p>
 		</div>
+		<!--	
+			<div class="largespace">
+				<img class="" src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
+			</div>
+		-->
+		<!-- <hr class="blueline"> -->
+		<div class="portfolio-col">
+			<div class="largespace">
+				<img class="smallspace" src="images/portfolio/Tmobilelogo.png" alt="Tmobilelogo">
+			</div>
+			<picture class="smallspace">
+	    		<source srcset="images/portfolio/tmobileipad.png" media="(max-width: 500px)">
+	    		<source srcset="images/portfolio/tmobileipad.png" media="(min-width: 501px) and (max-width: 1079px)"">
+	    		<source srcset="images/portfolio/tmobiledesktop.png" media="(min-width: 1080px)">
+	    		<img class="smallspaceright largespace" srcset="images/portfolio/tmobileipad.png" alt="My default image">
+			</picture>	
+			<p class="mobile largespace">Cyberia har designat och utvecklat T Mobile Social Enterprise hemsida. Sajten grundades på Expressible content platform som skapades och konstruerades i egen regi.</p>
+		</div>	
+		<!--
+			<div class="largespace">
+				<img src="icons/arrowicon.svg" alt="rightarrowicon" width="68" height="68">
+			</div>
+		-->
+			<div class="portfolio-heading">
+				<h1 class="smallspace">Flera kundprojekt</h1>
+			</div>
+			<div class="portfolio-container portfolio-small largespace">
+					<div class="dark-blue">
+						<img src="images/portfolio/ergologo.png" alt="ergologo">
+					</div>
+					
+					<div class="light-blue">
+						<img src="images/portfolio/HealthyBooster_logo.png" alt="healthyboosterlogo">
+					</div>
+					<div class="dark-blue">
+						<img src="images/portfolio/DG-Purple-Residential-Furniture-Logo.png" alt="distinctionlogo">
+					</div>
+					<div class="light-blue">
+						<img src="images/portfolio/LOGO_AXE_FRUIT2.png" alt="axefuritlogo">
+					</div>
+					<div class="light-blue">
+						<img src="images/portfolio/esprite-logo.png" alt="espritlogo">
+					</div>
+					<div class="dark-blue">
+						<img src="images/portfolio/lagunitas-logo.png" alt="lagunitaslogo">
+					</div>
+					<div class="light-blue">
+						<img src="images/portfolio/Riedel_Glas_logo.svg.png" alt="riedellogo">
+					</div>
+					<div class="dark-blue">
+						<img src="images/portfolio/zara-logo.png" alt="zaralogo">
+					</div>	
+			</div>
 	</section>
 	<hr class="blueline">
 	<section id="omoss" class="om-oss mobile-centering">
@@ -197,33 +217,39 @@
 	<section id="kontakt" class="kontakt mobile-centering">
 		<h1 class="largespace anchor">Kontakt</h1>
 		<div class="largespace">
-		<img src="icons/business-contact-256.png" alt="kontakticon" width="80" height="80">
+
+		<div class="flexcol">
+			<div class="largespace">
+				<img src="icons/business-contact-256.png" alt="kontakticon" width="80" height="80">
+			</div>
+				</div>
+					<form action="" class="contactForm largespace smallspaceright">
+						<div class="fieldset">
+							<input type="text" id="name" placeholder="Namn">
+							<input type="email" id="email" placeholder="Email">
+							<input type="telephone" id="telephone" placeholder="Telefon">
+							<textarea name="Message" id="pen" cols="10" rows="5" placeholder="Meddelande"></textarea>
+							<button type="submit">
+								Skicka
+							</button>
+						</div>	
+					</form>
+				</div>
+
+		<div class="flexcol">
+			<div class="largespace">
+				<img src="icons/map-marker-256.png" alt="mapicon" width="80" height="80">
+			</div>
+			<div class="googleimg">
+				<img src="images/GoogleMap.png" alt="googlemap">
+			</div>
+			<h2 class="smallspace">SUPPORT</h2>
+			<span></span>
+			
+			<h4>info@cyberia.se</h4>
+			<h4>08- 102 03 04</h4>
+			<h4>Mån - Fri (10:00 till 06:00)</h4>
 		</div>
-		
-		<form action="" class="contactForm largespace">
-			<div class="fieldset">
-				<input type="text" id="name" placeholder="Namn">
-				<input type="email" id="email" placeholder="Email">
-				<input type="telephone" id="telephone" placeholder="Telefon">
-				<textarea name="Message" id="pen" cols="10" rows="5" placeholder="Meddelande"></textarea>
-				<button type="submit">
-					Skicka
-				</button>
-			</div>	
-		</form>
-		
-		<div class="largespace">
-		<img src="icons/map-marker-256.png" alt="mapicon" width="80" height="80">
-		</div>
-		<div class="largespace">
-		<img src="images/GoogleMap.png" alt="googlemap" width="200" height="200">
-		</div>
-		<h2 class="smallspace">SUPPORT</h2>
-		<span></span>
-		
-		<h4>info@cyberia.se</h4>
-		<h4>08- 102 03 04</h4>
-		<h4>Mån - Fri (10:00 till 06:00)</h4>
 	</section>
 	<hr class="blueline">
 	</main>
