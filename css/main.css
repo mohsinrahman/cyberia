@@ -475,7 +475,13 @@ button {
 
   .dark-blue {
     width: 269px;
-    height: 364px; }
+    height: 364px;
+    background-color: #9ad3de; }
+
+  .light-blue {
+    width: 269px;
+    height: 364px;
+    background-color: #e3e3e3; }
 
   .light-blue {
     width: 269px;
@@ -498,10 +504,6 @@ button {
     width: 700px; }
 
   .p2 {
-    width: 500px; } }
-/*--------------------Styling------------------------*/
-.blueText {
-  color: #9ad3de; }
     width: 500px; }
 
   .kontakt {
@@ -525,6 +527,10 @@ button {
     justify-content: center;
     align-self: flex-start;
     max-width: 533px; } }
+/*--------------------Styling------------------------*/
+.blueText {
+  color: #9ad3de; }
+
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
