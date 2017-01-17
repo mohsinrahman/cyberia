@@ -6,7 +6,7 @@
 html {
   background-color: #fff;
   color: black;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
@@ -61,11 +61,13 @@ nav {
 /*------------- Headings----------------------------------*/
 h1 {
   margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   text-align: center; }
 
 h2 {
   margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   text-align: center; }
 
@@ -496,6 +498,10 @@ button {
     width: 700px; }
 
   .p2 {
+    width: 500px; } }
+/*--------------------Styling------------------------*/
+.blueText {
+  color: #9ad3de; }
     width: 500px; }
 
   .kontakt {
