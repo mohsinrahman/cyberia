@@ -355,7 +355,8 @@ button {
     align-self: flex-start; }
 
   .p1 {
-    width: 600px; }
+    width: 600px;
+    margin-bottom: 2em; }
 
   .p2 {
     width: 300px; }
@@ -386,7 +387,8 @@ button {
 
   .herotext {
     position: absolute;
-    z-index: 2; }
+    z-index: 2;
+    text-shadow: 4px 4px 10px #969696; }
 
   .herotext > h1 {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -410,7 +412,7 @@ button {
     top: 52px;
     left: 0px;
     background-color: #9ad3de;
-    opacity: 0.85;
+    opacity: 0.7;
     width: 100%;
     height: 576px;
     align-items: center;
@@ -454,6 +456,10 @@ button {
     align-items: center;
     flex-flow: row wrap; }
 
+  .mobile {
+    padding-left: 8px;
+    padding-right: 8px; }
+
   .tjanst {
     display: flex;
     flex-direction: column;
@@ -481,10 +487,6 @@ button {
 
   .portfolio-small {
     justify-content: center; }
-
-  .largespace {
-    padding-left: 0px;
-    padding-right: 0px; }
 
   .contactForm input[type=text] {
     width: 500px; }
@@ -520,7 +522,8 @@ button {
     align-self: flex-start; }
 
   .p1 {
-    width: 700px; }
+    width: 700px;
+    margin-bottom: 2em; }
 
   .p2 {
     width: 500px; }
