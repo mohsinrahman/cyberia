@@ -1,5 +1,5 @@
-<!DOCUMENT html>
-<html>
+<!DOCTYPE html>
+<html lang="sv">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,18 +15,18 @@
 			<div class="loggo frontpage">
 			<a href="#frontpage">
 				<span class="cyberia">	
-					<img src="icons/cyberialogo.png" class="headerlogo"></img>
+					<img src="icons/cyberialogo.png" class="headerlogo" alt="logo"/>
 					Cyberia
 				</span>
 			</a>	
 			</div>
 			<div class="below-hamburger">
 				<div class="navicon hamburger" id="navicon" onclick="navOpen()">
-					<img src="icons/hamburger.png" alt="Cyberia menu" width="38px" height="28px">
+					<img src="icons/hamburger.png" alt="Cyberia menu" width="38" height="28">
 				</div>
 				<!-- Gömd kryss-ikon -->
 				<div class="navicon closeIcon" id="closeicon" style="display: none;" onclick="navClose()"> 
-					<img src="icons/closeicon.svg" alt="Cyberia menu" width="38px" height="28px">
+					<img src="icons/closeicon.svg" alt="Cyberia menu" width="38" height="28">
 				</div>	
 			</div>
 			<div class="desktopNav">
@@ -41,7 +41,7 @@
 	</header>
 	<div class="sideNav" id="sideNav" style="display: none;">
 		<ul>
-		    <li><a href="#varatjanster"onclick="navClose()">VÅRA TJÄNSTER</a></li>
+		    <li><a href="#varatjanster" onclick="navClose()">VÅRA TJÄNSTER</a></li>
 		    <li><a href="#portfolio" onclick="navClose()">PORTFOLIO</a></li>
 		    <li><a href="#omoss" onclick="navClose()">OM OSS</a></li>
 		    <li><a href="#kontakt" onclick="navClose()">KONTAKT</a></li>
@@ -51,21 +51,21 @@
 		<h1 class="anchor"></h1>
 	</div>
 	<main class="container">
-	<section class="mobile-centering">		
+	<section class="mobile-centering">	
 			<picture>
 	    		<source srcset="images/front320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/front768.jpg" media="(min-width: 504px) and (max-width: 1079px)">
 	    		<source srcset="images/front1280.jpg" media="(min-width: 1080px)">
-	    		<img srcset="images/front320.jpg" alt="My default image">
+	    		<img src="images/front320.jpg" alt="My default image">
 			</picture>
 			<div id="herotext" class="herotext">	
 				<h1 class="largespace">Webbyrån som ger allt</h1>
 				<p class="mobile largespace">Vi vänder oss till företag som vill ha en webbplats som fungerar lika bra för alla användare i alla webbläsare och på alla enheter. Vi ger dig en modern webb med optimerad användarupplevelse.</p>
 			</div>	
-		<div class="herogradient">
-		</div>	
+			<div class="herogradient">
+			</div>	
 		<div class="largespace">
-			<img class="herohr" src="icons/cyberialogo.png" alt="Cyberia loggo" width="64px" height="64px">
+			<img class="herohr" src="icons/cyberialogo.png" alt="Cyberia loggo" width="64" height="64">
 		</div>
 				
 	</section>
@@ -77,7 +77,7 @@
 	    		<source srcset="images/tjanster/inhouse320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/inhouse768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/inhouse1280.jpg" media="(min-width: 1080px)">
-	    		<img class="largespace" srcset="images/tjanster/inhouse320.jpg" alt="My default image">
+	    		<img class="largespace" src="images/tjanster/inhouse320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Inhouse</h2>
 			<p class="mobile largespace">Vi kan utföra webbutveckling inhouse på vårt kontor på Sveavägen i Stockholm. Där jobbar våra utvecklare enligt Scrum eller annan agil projektmodell som anser vara det mest effektiva för projektet.
@@ -90,7 +90,7 @@
 	    		<source srcset="images/tjanster/code320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/code768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/code1280.jpg" media="(min-width: 1080px)">
-	    		<img class="largespace" srcset="images/tjanster/code320.jpg" alt="My default image">
+	    		<img class="largespace" src="images/tjanster/code320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Kodgranskning</h2>
 			<p class="mobile largespace">Cyberia utför kodgranskningar av all typ av mjukvara. Våra vanligaste uppdrag innefattar webbapplikationer och desktopapplikationer men vi analyserar allt ifrån kerneldrivrutiner och nätverksprotokoll till autentiseringsmekanismer i molnet.</p>
@@ -102,7 +102,7 @@
 	    		<source srcset="images/tjanster/underhall320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/underhall768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/underhall1280.jpg" media="(min-width: 1080px)">
-	    		<img class="largespace" srcset="images/tjanster/underhall320.jpg" alt="My default image">
+	    		<img class="largespace" src="images/tjanster/underhall320.jpg" alt="My default image">
 			</picture>	
 			<h2 class="smallspace">Underhåll</h2>
 			<p class="mobile largespace">Om du satt ihop din webbplats själv eller låtit någon annan bygga den bör du hålla dig à jour om de uppdateringar som finns för just din plattform. 
@@ -115,7 +115,7 @@
 	    		<source srcset="images/tjanster/design320.jpg" media="(max-width: 500px)">
 	    		<source srcset="images/tjanster/design768.jpg" media="(min-width: 501px) and (max-width: 1079px)">
 	    		<source srcset="images/tjanster/design1280.jpg" media="(min-width: 1080px)">
-	    		<img class="largespace" srcset="images/tjanster/design320.jpg" alt="My default image">
+	    		<img class="largespace" src="images/tjanster/design320.jpg" alt="My default image">
 			</picture>
 			<h2 class="smallspace">Grafisk design</h2>
 			<p class="mobile largespace">Ett företags grafiska profil är dess visuella identitet – allt du kommunicerar måste hänga ihop för att människor ska känna igen ditt varumärke. </p>
@@ -134,9 +134,9 @@
 				</div>
 				<picture>
 		    		<source srcset="images/portfolio/eaipad.png" media="(max-width: 500px)">
-		    		<source srcset="images/portfolio/eaipad.png" media="(min-width: 501px) and (max-width: 1079px)"">
+		    		<source srcset="images/portfolio/eaipad.png" media="(min-width: 501px) and (max-width: 1079px)">
 		    		<source srcset="images/portfolio/eadesktop.png" media="(min-width: 1080px)">
-		    		<img class="largespace" srcset="images/portfolio/eaipad.png" alt="My default image">
+		    		<img class="largespace" src="images/portfolio/eaipad.png" alt="My default image">
 				</picture>	
 					<p class="mobile largespace">Cyberia designade och utvecklade en kraftfull och lyhörd webbplats för att göra det möjligt för EA Games att visa upp sina kända spel.</p>
 			</div>
@@ -146,9 +146,9 @@
 				</div>
 				<picture>
 		    		<source srcset="images/portfolio/tmobileipad.png" media="(max-width: 500px)">
-		    		<source srcset="images/portfolio/tmobileipad.png" media="(min-width: 501px) and (max-width: 1079px)"">
+		    		<source srcset="images/portfolio/tmobileipad.png" media="(min-width: 501px) and (max-width: 1079px)">
 		    		<source srcset="images/portfolio/tmobiledesktop.png" media="(min-width: 1080px)">
-		    		<img class="largespace" srcset="images/portfolio/tmobileipad.png" alt="My default image">
+		    		<img class="largespace" src="images/portfolio/tmobileipad.png" alt="My default image">
 				</picture>	
 				<p class="mobile largespace">Cyberia har designat och utvecklat T Mobile Social Enterprise hemsida. Sajten grundades på Expressible content platform som skapades och konstruerades i egen regi.</p>
 			</div>	
@@ -211,11 +211,11 @@
 			<div class="largespace">
 				<img src="icons/business-contact-2.png" alt="kontakticon">
 			</div>
-					<form action="" class="contactForm largespace smallspaceright">
+					<form class="contactForm largespace smallspaceright">
 						<div class="fieldset">
 							<input type="text" id="name" placeholder="Namn">
 							<input type="email" id="email" placeholder="Email">
-							<input type="telephone" id="telephone" placeholder="Telefon">
+							<input type="text" id="telephone" placeholder="Telefon">
 							<textarea name="Message" id="pen" cols="10" rows="5" placeholder="Meddelande"></textarea>
 							<button type="submit">
 								Skicka
