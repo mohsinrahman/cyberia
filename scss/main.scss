@@ -1,4 +1,5 @@
 @import "Partials/variables";
+@import "Partials/mixins";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,9 +22,7 @@ header {
 nav {
   background-color: $color-darkblue;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px; }
@@ -35,30 +34,23 @@ nav {
   text-decoration: none;
 }
 .hamburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
   margin: auto; }
 
 .below-hamburger {
   background-color: $color-lightblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80px;
           flex: 0 0 80px; }
 
 .loggo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
+  @include align-items-center;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+           }
 
 .container {
   margin: 0 auto;
@@ -66,97 +58,67 @@ nav {
   overflow: hidden; }
 
 .cyberia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
+  @include font($base-font, 1.625em, bold, black);
   padding-left: 15px;
-  font-weight: bold;
-  color: black;
-  font-size: 1.625em; }
+ }
 
 /*---------------------------------------------------------*/
 /*------------- Headings----------------------------------*/
 h1 {
+  @include font($head-font, 1.875em, bold, #111);
   margin: 0px;
-  font-family: $head-font;
-  font-size: 30px;
   text-align: center; }
 
 h2 {
+  @include font($head-font, 1.5em, bold, #111);
   margin: 0px;
-  font-family: $head-font;
-  font-size: 24px;
+
   text-align: center; }
 h3 {
-  font-size: 18px;
+  @include font($family: $head-font, $size: 18px);
   text-align: left;
 }
 p {
+  @include font($family: $base-font, $size: 1em);
 	max-width: 511px;
 }  
 /*---------------------------------------------------------*/
 .mobile {
-  font-size: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include font($family: $base-font,$size: 1em);
+  @include flex-prefix;
   padding: 0 8px; }
 
 .mobile-centering{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @include flex-prefix;
+  @include align-items-center;
+  @include flex-direction-column;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px; }
 .tjanst > img {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  @include flex-prefix;
 	margin: 0 auto;
 } 
 .dark-blue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;   
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center; 
   width: 130px;
   height: 176px;		
   background-color: $color-lightblue; }
 
 .light-blue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;  
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center;
   width: 130px;
   height: 176px;		
   background-color: $color-lightgrey; }
 
 .portfolio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  @include flex-prefix;
+  @include justify-content-center;
   max-width: 1080px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
@@ -186,24 +148,19 @@ p {
 /*-----------------FOOTER------------*/
 .footericonswraper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  @include flex-prefix;
+  @include justify-content-center;
+ }
 
 /*---------------------------------------------------------*/
 /*-------------------FORM----------------------------------*/
 .contactForm input[type=text], .contactForm input[type=email], .contactForm input[type=telephone], .contactForm textarea {
   outline: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
   padding: 15px;
   box-sizing: border-box;
   width: 100%;
-  background: #f5f2f2; }
+  background: $color-lightestgrey; }
 
 button {
   display: block;
@@ -234,23 +191,16 @@ button {
 
 /*------------HAMBURGER MENU ------------------------------*/
 .navicon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center;
   width: 100%;
   height: 100%;
   background: $color-lightblue;
   float: right;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .closeIcon {
-  font-size: 30px;
-  color: #666;
+  @include font($family: $base-font, $size: 1.875em, $color: #666);
   line-height: 36px;
 }
 .sideNav {
@@ -280,16 +230,9 @@ button {
     width: 100%; }
 }
 .sideNav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @include flex-prefix;
+  @include align-items-center;
+  @include flex-direction-column;
   list-style: none;
   background: $color-lightblue; 
   padding-top: 50px;
@@ -301,19 +244,10 @@ button {
   color: white; 
 }
 .flexcol{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-direction-column;
 }   
 /*------------IPAD & DESKTOP MENU ------------------------------*/
 @media screen and (min-width: 240px) and (max-width: 500px){
@@ -324,31 +258,17 @@ button {
     display: none;
   }
   .vara-tjanster{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-flow-row-wrap;
     -ms-flex-item-align: center;
         align-self: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
   }
   .tjanst {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 320px;
             flex: 1 1 320px;
@@ -358,30 +278,15 @@ button {
     width: 50%;
   }
   .om-oss-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
   }
   .portfolio-col{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
   }
  .googleimg > img{
   width: 250px;
@@ -406,73 +311,42 @@ button {
     width: 36px;
   }
   .mobile-centering {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    @include flex-prefix;
+    @include flex-direction-column;
   }
   .vara-tjanster {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  @include flex-prefix;
+  @include align-items-center;
+  @include flex-flow-row-wrap;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-	-ms-flex-flow: row wrap;
-	    flex-flow: row wrap;
 
   }
   .tjanst {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
 	  -webkit-box-flex: 1;
 	      -ms-flex: 1 1 320px;
 	          flex: 1 1 320px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     max-width: 320px;
   }
   .portfolio-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-flow-row-wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
   }
   .portfolio-col{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 320px;
             flex: 1 1 320px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     max-width: 320px;
   }
   .portfolio-heading{
@@ -492,34 +366,19 @@ button {
     width: 50%;
   }
   .om-oss {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-	-ms-flex-flow: row wrap;
-	    flex-flow: row wrap;
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center;
+  @include flex-flow-row-wrap;
   }
   .om-oss-col{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
 	   -webkit-box-flex: 1;
 	       -ms-flex: 1 1 0px;
 	           flex: 1 1 0px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   }
   .p1 {
   	width: 600px;
@@ -529,16 +388,11 @@ button {
     width: 300px;
   }
   .kontakt{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-flow-row-wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
   } 
   .contactForm input[type=text]{
     width: 320px;
@@ -548,21 +402,12 @@ button {
    height: 300px;
   }  
   .flexcol{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+
+    @include flex-prefix;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
     max-width: 533px;
   }        
  } 
@@ -577,24 +422,19 @@ button {
   text-shadow: 4px 4px 10px rgba(150, 150, 150, 1);
  } 
  .herotext > h1{
-    font-family:  $head-font;
-    font-size: 64px;
-    font-weight: bold;
-    color: white;
+    @include font($head-font, 4em, bold, white);
  }
   .herotext > p{
-    font-family:  $head-font;
-    font-size: 30px;
-    color: white;
+    @include font($head-font, 30px, bold, $color: white);
     text-align: center;
  }
  .herohr{
     display: none;
  }
  .herogradient{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center;
   position: absolute;
   z-index: 1;
   top: 52px;
@@ -603,33 +443,21 @@ button {
   opacity: 0.7;
   width: 100%;
   height: 576px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
  }   	
  .navicon, .below-hamburger{
     display: none;
  }
  .desktopNav{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 0.75em;
+    @include flex-prefix;
+    @include font($family: $head-font, $size: 0.75em);
  }
  .desktopNav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     list-style: none;
     margin-right: 15px;
   }
@@ -646,31 +474,17 @@ button {
     width: 36px;
   }
    .mobile-centering{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-direction-column;
   }
   .vara-tjanster{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-flow-row-wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
   }
   .mobile {
   	padding-left: 8px;
@@ -678,60 +492,37 @@ button {
   	
   }
   .tjanst {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 360px;
             flex: 1 1 360px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     max-width: 540px;
   }
   .portfolio-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-flow-row-wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
   }
   .portfolio-col{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 533px;
             flex: 1 1 533px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     max-width: 533px;
   }
   .portfolio-heading{
     width: 100%;
   } 
   .portfolio-small{
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    @include justify-content-center;
   }
   .contactForm input[type=text]{
     width: 500px;
@@ -753,34 +544,19 @@ button {
   	height: 364px;		
   }
   .om-oss {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-	-ms-flex-flow: row wrap;
-	    flex-flow: row wrap;
+  @include flex-prefix;
+  @include align-items-center;
+  @include justify-content-center;
+  @include flex-flow-row-wrap;
   }
   .om-oss-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
 	  -webkit-box-flex: 1;
 	      -ms-flex: 1 1 0px;
 	          flex: 1 1 0px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   }
   .p1 {
   	width: 700px;
@@ -790,18 +566,12 @@ button {
     width: 500px;
   }
   .kontakt{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include flex-prefix;
+    @include align-items-center;
+    @include flex-flow-row-wrap;
+    @include align-self-flex-start;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   } 
   .contactForm input[type=text]{
     width: 500px;
@@ -812,21 +582,11 @@ button {
     margin-left: 8px;
   }
 .flexcol{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    @include flex-prefix;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-direction-column;
+    @include align-self-flex-start;
     max-width: 533px;
   }            
 }
