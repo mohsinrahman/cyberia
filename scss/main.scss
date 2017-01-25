@@ -419,6 +419,8 @@ button {
   position: absolute;
   z-index: 2;
   text-align: center;
+  //top: 200px;
+  //left: 380px;
   text-shadow: 4px 4px 10px rgba(150, 150, 150, 1);
  } 
  .herotext > h1{
@@ -431,6 +433,7 @@ button {
  .herohr{
     display: none;
  }
+
  .herogradient{
   @include flex-prefix;
   @include align-items-center;
@@ -478,6 +481,7 @@ button {
     @include align-items-center;
     @include justify-content-center;
     @include flex-direction-column;
+    margin-top: -9px;
   }
   .vara-tjanster{
     @include flex-prefix;
@@ -489,7 +493,6 @@ button {
   .mobile {
   	padding-left: 8px;
   	padding-right: 8px;
-  	
   }
   .tjanst {
     @include flex-prefix;

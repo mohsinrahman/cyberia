@@ -673,7 +673,8 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: -9px; }
 
   .vara-tjanster {
     display: -webkit-box;
