@@ -331,6 +331,9 @@ button {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.footer-text h2, h3 {
+  text-align: center; }
+
 /*------------IPAD & DESKTOP MENU ------------------------------*/
 @media screen and (min-width: 240px) and (max-width: 500px) {
   .desktopNav {
@@ -576,7 +579,23 @@ button {
     flex-direction: column;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    max-width: 533px; } }
+    max-width: 533px; }
+
+  /*---------- Footer ------------*/
+  .desktop-centering {
+    flex-direction: row;
+    margin: 2em;
+    justify-content: space-around; }
+
+  .footer-text {
+    width: 70%; }
+
+  .footer-text h2 {
+    text-align: left; }
+
+  .footericonswraper {
+    width: 30%;
+    justify-content: flex-end; } }
 @media screen and (min-width: 1024px) {
   p {
     max-width: 1000px; }
@@ -826,6 +845,27 @@ button {
     width: 350px;
     height: 350px;
     margin-left: 8px; }
+
+  /*---------- Footer ------------*/
+  .desktop-centering {
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 2em; }
+
+  .footer-text {
+    flex-direction: column;
+    width: 500px; }
+
+  .footer-text h2, h3 {
+    text-align: left; }
+
+  .footericonswraper {
+    flex-direction: column;
+    width: 10%;
+    justify-content: flex-end; }
+
+  .footericons {
+    flex-direction: row; }
 
   .flexcol {
     display: -webkit-box;
