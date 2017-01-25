@@ -603,6 +603,10 @@ button {
   .herohr {
     display: none; }
 
+  .bild {
+    width: 100%;
+    height: 576px; }
+
   .herogradient {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -617,8 +621,6 @@ button {
     z-index: 1;
     top: 52px;
     left: 0px;
-    background-color: #9ad3de;
-    opacity: 0.7;
     width: 100%;
     height: 576px; }
 
@@ -673,7 +675,8 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: -9px; }
 
   .vara-tjanster {
     display: -webkit-box;
