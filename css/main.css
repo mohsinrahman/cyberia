@@ -27,6 +27,9 @@ nav {
   -ms-flex: 1 1 0px;
   flex: 1 1 0px; }
 
+.blueText {
+  color: #89bdd3; }
+
 .anchor {
   padding-top: 60px;
   width: 100%; }
@@ -590,7 +593,7 @@ button {
   .footer-text {
     width: 70%; }
 
-  .footer-text h2 {
+  .footer-text h2, h3 {
     text-align: left; }
 
   .footericonswraper {
@@ -854,18 +857,20 @@ button {
 
   .footer-text {
     flex-direction: column;
-    width: 500px; }
+    width: 70%; }
 
   .footer-text h2, h3 {
     text-align: left; }
 
   .footericonswraper {
     flex-direction: column;
-    width: 10%;
+    width: 30%;
     justify-content: flex-end; }
 
   .footericons {
-    flex-direction: row; }
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
 
   .flexcol {
     display: -webkit-box;
@@ -884,8 +889,5 @@ button {
     -ms-flex-item-align: start;
     align-self: flex-start;
     max-width: 533px; } }
-/*--------------------Styling------------------------*/
-.blueText {
-  color: #9ad3de; }
 
 /*# sourceMappingURL=main.css.map */

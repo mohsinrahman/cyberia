@@ -424,7 +424,7 @@ button {
   .footer-text{
     width: 70%;
   }
-  .footer-text h2 {
+  .footer-text h2, h3 {
     text-align: left;
   }
   .footericonswraper{
@@ -607,7 +607,6 @@ button {
     margin-left: 8px;
   }
   /*---------- Footer ------------*/
-
   .desktop-centering{
     flex-flow: row;
     justify-content: space-around;
@@ -615,18 +614,20 @@ button {
   }
   .footer-text{
     flex-direction: column;
-    width: 500px;
+    width: 70%;
   }
   .footer-text h2, h3 {
     text-align: left;
   }
   .footericonswraper{
     flex-direction: column;
-    width: 10%;
+    width: 30%;
     justify-content: flex-end;
   }
   .footericons{
+  	display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }  
 .flexcol{
     @include flex-prefix;
