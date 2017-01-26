@@ -230,8 +230,12 @@
 			<div class="largespace">
 				<img src="icons/map-marker-256.png" alt="mapicon" width="80" height="62">
 			</div>
-			<div class="googleimg largespace">
-				<img src="images/GoogleMap.png" alt="googlemap">
+			<div class="googleimg largespace map">
+				
+               
+               <div id="map" class="mt-5"></div>
+
+              
 			</div>
 			<h2 class="smallspace">SUPPORT</h2>
 			<span></span>
@@ -244,22 +248,24 @@
 	<div class="smallspace">
 		<hr class="blueline">
 	</div>
-	</main>
-	<footer class="mobile-centering">
-		<h2 class="largespace">CYBERIA Webbyrå AB <br> Stockholm</h2>
-		<div class="largespace">
-			<h3>Besöksadress:&nbsp;<span class="blueText">Karlaplan 5</span></h3>
-			<h3>Telefon:&nbsp;<span class="blueText">073 - 960 35 02</span></h3>
-			<h3>E-post:&nbsp;<span class="blueText">info@cyberia.se</span></h3>
-		</div>	
-		<div class="footericonswraper mobile smallspace">
-			<div class="smallspaceright">
-				<img src="icons/linkedin-2-64.png" alt="LinkedinIcon" width="48" height="48">
+	
+		<footer class="mobile-centering desktop-centering">	
+			<div class="footer-text largespace">
+				<h2 class="largespace">CYBERIA Webbyrå AB, Stockholm</h2>
+				<h3>Besöksadress:&nbsp;<span class="blueText">Karlaplan 5</span></h3>
+				<h3>Telefon:&nbsp;<span class="blueText">073 - 960 35 02</span></h3>
+				<h3>E-post:&nbsp;<span class="blueText">info@cyberia.se</span></h3>
+			</div>	
+			<div class="footericonswraper mobile smallspace">
+				<div class="footericons">
+					<img src="icons/linkedin-2-64.png" alt="LinkedinIcon" width="48" height="48">
+					<img src="icons/facebook-2-64.png" alt="facebookIcon" width="48" height="48">
+				</div>
 			</div>
-			<img src="icons/facebook-2-64.png" alt="facebookIcon" width="48" height="48">
-		</div>
-	</footer>
+		</footer>
+	</main>
 	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 </html>
 
