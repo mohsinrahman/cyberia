@@ -337,6 +337,15 @@ button {
 .footer-text h2, h3 {
   text-align: center; }
 
+.map {
+  width: 200px;
+  height: 200px; }
+
+#map {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%; }
+
 /*------------IPAD & DESKTOP MENU ------------------------------*/
 @media screen and (min-width: 240px) and (max-width: 500px) {
   .desktopNav {
@@ -403,11 +412,7 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
-
-  .googleimg > img {
-    width: 250px;
-    height: 250px; } }
+    flex-direction: column; } }
 @media screen and (min-width: 501px) and (max-width: 1023px) {
   .desktopNav {
     display: none; }
@@ -562,10 +567,6 @@ button {
   .contactForm input[type=text] {
     width: 320px; }
 
-  .googleimg > img {
-    width: 300px;
-    height: 300px; }
-
   .flexcol {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,7 +599,11 @@ button {
 
   .footericonswraper {
     width: 30%;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  .map {
+    width: 250px !important;
+    height: 250px !important; } }
 @media screen and (min-width: 1024px) {
   p {
     max-width: 1000px; }
@@ -844,11 +849,6 @@ button {
   .contactForm input[type=text] {
     width: 500px; }
 
-  .googleimg > img {
-    width: 350px;
-    height: 350px;
-    margin-left: 8px; }
-
   /*---------- Footer ------------*/
   .desktop-centering {
     flex-flow: row;
@@ -888,6 +888,10 @@ button {
     flex-direction: column;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    max-width: 533px; } }
+    max-width: 533px; }
+
+  .map {
+    width: 350px;
+    height: 350px; } }
 
 /*# sourceMappingURL=main.css.map */
