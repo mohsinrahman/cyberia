@@ -26,6 +26,9 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px; }
+.blueText {
+  color: $color-darkblue;
+}          
 .anchor {
   padding-top: 60px;
   width: 100%;
@@ -249,6 +252,9 @@ button {
     @include align-items-center;
     @include justify-content-center;
     @include flex-direction-column;
+}
+.footer-text h2, h3{
+  text-align: center;
 }   
 /*------------IPAD & DESKTOP MENU ------------------------------*/
 @media screen and (min-width: 240px) and (max-width: 500px){
@@ -403,14 +409,30 @@ button {
    height: 300px;
   }  
   .flexcol{
-
     @include flex-prefix;
     @include align-items-center;
     @include justify-content-center;
     @include flex-direction-column;
     @include align-self-flex-start;
     max-width: 533px;
-  }        
+  }
+  /*---------- Footer ------------*/
+  .desktop-centering{
+    flex-direction: row;
+    margin: 2em;
+    justify-content: space-around;
+  }
+  .footer-text{
+    width: 70%;
+  }
+  .footer-text h2, h3 {
+    text-align: left;
+  }
+  .footericonswraper{
+    width: 30%;
+    justify-content: flex-end;
+  } 
+
  } 
 @media screen and (min-width: 1024px){
   p {
@@ -588,6 +610,29 @@ button {
     height: 350px;
     margin-left: 8px;
   }
+  /*---------- Footer ------------*/
+  .desktop-centering{
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 2em; 
+  }
+  .footer-text{
+    flex-direction: column;
+    width: 70%;
+  }
+  .footer-text h2, h3 {
+    text-align: left;
+  }
+  .footericonswraper{
+    flex-direction: column;
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .footericons{
+  	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }  
 .flexcol{
     @include flex-prefix;
     @include align-items-center;
@@ -595,9 +640,6 @@ button {
     @include flex-direction-column;
     @include align-self-flex-start;
     max-width: 533px;
-  }            
-}
-/*--------------------Styling------------------------*/
-.blueText {
-  color: $color-lightblue;
+  }
+               
 }

@@ -28,6 +28,9 @@ nav {
   -ms-flex: 1 1 0px;
   flex: 1 1 0px; }
 
+.blueText {
+  color: #89bdd3; }
+
 .anchor {
   padding-top: 60px;
   width: 100%; }
@@ -347,6 +350,9 @@ button {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.footer-text h2, h3 {
+  text-align: center; }
+
 /*------------IPAD & DESKTOP MENU ------------------------------*/
 @media screen and (min-width: 240px) and (max-width: 500px) {
   .desktopNav {
@@ -615,7 +621,23 @@ button {
     flex-direction: column;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    max-width: 533px; } }
+    max-width: 533px; }
+
+  /*---------- Footer ------------*/
+  .desktop-centering {
+    flex-direction: row;
+    margin: 2em;
+    justify-content: space-around; }
+
+  .footer-text {
+    width: 70%; }
+
+  .footer-text h2, h3 {
+    text-align: left; }
+
+  .footericonswraper {
+    width: 30%;
+    justify-content: flex-end; } }
 @media screen and (min-width: 1024px) {
   p {
     max-width: 1000px; }
@@ -885,6 +907,29 @@ button {
     height: 350px;
     margin-left: 8px; }
 
+  /*---------- Footer ------------*/
+  .desktop-centering {
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 2em; }
+
+  .footer-text {
+    flex-direction: column;
+    width: 70%; }
+
+  .footer-text h2, h3 {
+    text-align: left; }
+
+  .footericonswraper {
+    flex-direction: column;
+    width: 30%;
+    justify-content: flex-end; }
+
+  .footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+
   .flexcol {
     display: -webkit-flex;
     display: -webkit-box;
@@ -903,8 +948,5 @@ button {
     -ms-flex-item-align: start;
     align-self: flex-start;
     max-width: 533px; } }
-/*--------------------Styling------------------------*/
-.blueText {
-  color: #9ad3de; }
 
 /*# sourceMappingURL=main.css.map */
