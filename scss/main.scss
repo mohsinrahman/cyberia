@@ -98,7 +98,8 @@ p {
   @include flex-direction-column;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
-          flex: 1 1 0px; }
+          flex: 1 1 0px; 
+        }
 .tjanst > img {
   @include flex-prefix;
 	margin: 0 auto;
@@ -469,7 +470,11 @@ button {
  .herohr{
     display: none;
  }
-
+.hero {
+margin-top: -100px;
+height: 100vh;
+margin-bottom: 60px;
+}
  .herogradient{
   @include flex-prefix;
   @include align-items-center;
@@ -481,7 +486,7 @@ button {
   background-color: #9ad3de;
   opacity: 0.7;
   width: 100%;
-  height: 576px;
+  height: 100vh;
  }   	
  .navicon, .below-hamburger{
     display: none;
@@ -536,8 +541,10 @@ button {
     @include flex-direction-column;
     @include align-self-flex-start;
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 360px;
         -ms-flex: 1 1 360px;
             flex: 1 1 360px;
+            flex: 1 0 auto;
     max-width: 540px;
   }
   .portfolio-container {
@@ -593,9 +600,10 @@ button {
     @include align-items-center;
     @include flex-direction-column;
     @include align-self-flex-start;
-	  -webkit-box-flex: 1;
-	      -ms-flex: 1 1 0px;
-	          flex: 1 1 0px;
+	  //-webkit-box-flex: 1;
+	  //    -ms-flex: 1 1 0px;
+	  //        flex: 1 1 0px;
+            flex: 1 0 auto;
   }
   .p1 {
   	width: 700px;
